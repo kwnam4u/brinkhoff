@@ -106,7 +106,7 @@ public class DefaultDataGenerator extends DataGenerator {
 	 */
 	public static void main(java.lang.String[] args) {
 		if ((args.length > 0) && (args[0] != null))
-			propFilename = makeAbsolute(args[0]);
+			propFilename = "file:" + makeAbsolute(args[0]);
 		main ("generator2.DefaultDataGenerator");
 	}
 	
